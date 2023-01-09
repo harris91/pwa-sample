@@ -11,10 +11,28 @@
 
     <script type="module">
         if ("serviceWorker" in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register("pwabuilder-sw.js");
+            navigator.serviceWorker.register("pwabuilder-sw.js").then(function(reg) {
+                console.log("register", reg);
+            }).catch(function(err) {
+                console.log("err", err);
             });
         }
+
+        window.addEventListener('beforeinstallprompt', function(e) {
+            // beforeinstallprompt Event fired
+
+            // e.userChoice will return a Promise. 
+            // For more details read: https://developers.google.com/web/fundamentals/getting-started/primers/promises
+            e.userChoice.then(function(choiceResult) {
+                console.log(choiceResult.outcome);
+
+                if (choiceResult.outcome == 'dismissed') {
+                console.log('User cancelled home screen install');
+                } else {
+                console.log('User added to home screen');
+                }
+            });
+        });
     </script>
 </head>
 <body>
@@ -33,7 +51,7 @@
                         <img src="img/quotes.png" alt="따옴표">
                     </div>
                     <p>
-                        <span>1만 시간의 법칙</span>은<br>어떤 분야의 전문가가 되기 위해서는<br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+                        <span>PWA Sample!</span>은<br>어떤 분야의 전문가가 되기 위해서는<br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.
                     </p>
                 </div>
             </div>
