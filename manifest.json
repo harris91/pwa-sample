@@ -1,13 +1,33 @@
 {
   "dir": "auto",
-  "display": "standalone",
-  "name": "1만 시간의 법칙",
-  "short_name": "시간의 법칙",
   "lang": "ko",
+  "name": "1만 시간의 법칙",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "/",
+  "short_name": "시간의 법칙",
   "theme_color": "#fff",
-  "background_color": "#fff",
-  "start_url": "자신의 URL 또는 /index.html",
+  "description": "Enhance your work day and solve your cross platform whiteboarding needs with webboard! Draw text, shapes, attach images and more and share those whiteboards with anyone through OneDrive!",
   "orientation": "portrait",
+  "background_color": "#fff",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "screenshots": [],
+  "features": [],
+  "shortcuts": [
+    {
+      "name": "Start Live Session",
+      "short_name": "Start Live",
+      "description": "Jump direction into starting or joining a live session",
+      "url": "/?startLive",
+      "icons": [
+        {
+          "src": "images/ios/192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
   "icons": [
     {
       "src": "images/windows11/SmallTile.scale-100.png",
@@ -569,6 +589,5 @@
       "sizes": "1024x1024",
       "purpose": "any"
     }
-  ],
-  "screenshots": []
+  ]
 }
