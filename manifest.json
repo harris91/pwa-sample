@@ -8,7 +8,6 @@
   "background_color": "#fff",
   "start_url": "자신의 URL 또는 /index.html",
   "orientation": "portrait",
-  "short"
   "icons": [
     {
       "src": "images/windows11/SmallTile.scale-100.png",
