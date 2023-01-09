@@ -1,21 +1,16 @@
 {
-  "background_color": "none",
-  "description": "PWA를 처음 구성해보는 웹앱 입니다.",
-  "dir": "ltr",
+  "dir": "auto",
   "display": "standalone",
-  "name": "첫 PWA 시작",
+  "name": "1만 시간의 법칙",
+  "short_name": "시간의 법칙",
+  "lang": "ko",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "start_url": "자신의 URL 또는 /index.html",
   "orientation": "portrait",
-  "scope": "/",
-  "short_name": "PWA-HARRIS",
-  "start_url": "https://harris91.github.io/pwa-sample/",
-  "theme_color": "none",
-  "categories": [],
-  "screenshots": [],
   "icons": [
     {
-      "src": "img/favicon.ico"
+      "src": "images/ios/512.png"
     }
-  ],
-  "shortcuts": [],
-  "lang": "ko"
+  ]
 }
