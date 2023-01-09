@@ -11,7 +11,9 @@
 
     <script type="module">
         if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("pwabuilder-sw.js");
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register("pwabuilder-sw.js");
+            });
         }
     </script>
 </head>
