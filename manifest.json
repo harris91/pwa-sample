@@ -10,7 +10,28 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "images/ios/512.png"
+      "src": "images/ios/64.png",
+      "type": "image/png",
+      "sizes": "64x64",
+      "purpose": "any"
+    },
+    {
+      "src": "images/ios/128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any"
+    },
+    {
+      "src": "images/ios/512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "images/ios/1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any"
     }
   ]
 }
