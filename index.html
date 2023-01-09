@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.json" />
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/10000hours.css">   
@@ -11,21 +10,22 @@
 
     <script type="module">
         if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("pwabuilder-sw.js").then(function(reg) {
+            navigator.serviceWorker.register("./pwabuilder-sw.js").then(function(reg) {
                 console.log("register", reg);
             }).catch(function(err) {
                 console.log("err", err);
             });
         }
-
+        
         window.addEventListener('beforeinstallprompt', function(e) {
+            /* https://shoppinglist-ecea7.firebaseapp.com/ */ 
             // beforeinstallprompt Event fired
-
+            
             // e.userChoice will return a Promise. 
             // For more details read: https://developers.google.com/web/fundamentals/getting-started/primers/promises
             e.userChoice.then(function(choiceResult) {
                 console.log(choiceResult.outcome);
-
+                
                 if (choiceResult.outcome == 'dismissed') {
                 console.log('User cancelled home screen install');
                 } else {
@@ -34,6 +34,8 @@
             });
         });
     </script>
+
+    <link rel="manifest" href="manifest.json" />
 </head>
 <body>
     <section id="contents">

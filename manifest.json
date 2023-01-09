@@ -2,7 +2,6 @@
   "dir": "auto",
   "lang": "ko",
   "name": "1만 시간의 법칙",
-  "scope": "/",
   "display": "standalone",
   "start_url": "https://harris91.github.io/pwa-sample/",
   "short_name": "시간의 법칙",
