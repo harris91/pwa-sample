@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/10000hours.css">   
     <title>1만 시간의 법칙</title>
 
+    <link rel="/manifest" href="manifest.json" />
+
     <script type="module">
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("./pwabuilder-sw.js").then(function(reg) {
@@ -35,7 +37,7 @@
         });
     </script>
 
-    <link rel="/manifest" href="manifest.json" />
+    
 </head>
 <body>
     <section id="contents">
