@@ -7,9 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/10000hours.css">   
     <title>1만 시간의 법칙</title>
-
-    <link rel="manifest" href="manifest.json" />
-
+    
     <script type="module">
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("./pwabuilder-sw.js").then(function(reg) {
@@ -30,13 +28,14 @@
                 
                 if (choiceResult.outcome == 'dismissed') {
                 console.log('User cancelled home screen install');
-                } else {
+            } else {
                 console.log('User added to home screen');
-                }
-            });
+            }
         });
+    });
     </script>
 
+    <link rel="manifest" href="manifest.json" />
     
 </head>
 <body>
@@ -49,7 +48,7 @@
                 </div>
             </div>
             <div class="intro">
-                <div class="intro_saying">"HOW TO WORK 'PWA'"</div>
+                <div class="intro_saying">HOW TO WORK "PWA"</div>
                 <div class="explain">
                     <div class="quotes">
                         <img src="img/quotes.png" alt="따옴표">
